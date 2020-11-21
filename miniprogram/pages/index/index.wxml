@@ -1,0 +1,98 @@
+<swiper
+ autoplay="{{true}}"
+ interval="{{interval}}"
+ circular="{{true}}"
+ duration="{{duration}}"
+ indicator-dots="{{true}}"
+ indicator-active-color="#fff"
+ indicator-active-color="#8ECDA9"
+>
+	<block wx:for="{{imgUrls}}" wx:key="{{index}}">
+		<swiper-item>
+			<image class="slide-image" src="{{item}}"></image>
+		</swiper-item>
+	</block>
+</swiper>
+
+<view class="main">
+	<view class="main-enterUniversity">
+		<view class="main-title">
+			走进城科
+		</view>
+		<view class="main-funcIcon">
+			<view class="main-iconDetail">
+				<view class="image">
+					<image class="funcImage" src="/images/introduce.png"></image>
+				</view>
+				<text>城科简介</text>
+			</view>
+			<view class="main-iconDetail">
+				<view class="image">
+					<image class="funcImage" src="/images/run.png"></image>
+				</view>
+				<text>逛逛城科</text>
+			</view>
+			<view class="main-iconDetail">
+				<view class="image">
+					<image class="funcImage" src="/images/schoolNews.png"></image>
+				</view>
+				<text>城科动态</text>
+			</view>
+			<view class="main-iconDetail">
+				<view class="image">
+					<image class="funcImage" src="/images/department.png"></image>
+				</view>
+				<text>院系介绍</text>
+			</view>
+
+			<view class="main-iconDetail">
+				<view class="image">
+					<image class="funcImage" src="/images/cal.png"></image>
+				</view>
+				<text>校历</text>
+			</view>
+
+		</view>
+	</view>
+	<view class="main-enterUniversity">
+		<view class="main-title">
+			城科服务
+		</view>
+		<view class="main-funcIcon">
+			<view class="main-iconDetail">
+				<view class="image">
+					<image class="funcImage" src="/images/exchange.png"></image>
+				</view>
+				<text>闲置交易</text>
+			</view>
+			<view class="main-iconDetail">
+				<view class="image">
+					<image class="funcImage" src="/images/lost-found.png"></image>
+				</view>
+				<text>失物招领</text>
+			</view>
+			<view class="main-iconDetail">
+				<view class="image">
+					<image class="funcImage" src="/images/deliever.png"></image>
+				</view>
+				<text>代拿快递</text>
+			</view>
+
+			<view class="main-iconDetail">
+				<view class="image">
+					<image class="funcImage" src="/images/carpooling.png"></image>
+				</view>
+				<text>拼车出行</text>
+			</view>
+
+			<view class="main-iconDetail">
+				<view class="image">
+					<image class="funcImage" src="/images/bodytest.png"></image>
+				</view>
+				<text>体质检测</text>
+			</view>
+
+		</view>
+	</view>
+</view>
+

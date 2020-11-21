@@ -1,0 +1,32 @@
+/* miniprogram/pages/index/index.wxss */
+.slide-image{
+  width: 100%;
+}
+.main-enterUniversity{
+  margin: 20rpx;
+}
+.main-title{
+  color: #8ECDA9;
+  font-weight: 400;
+  letter-spacing: 0.3em;
+  /* text-align: center; */
+}
+.funcImage{
+  width: 70rpx;
+  height: 70rpx;
+}
+.main-funcIcon{
+  display: flex;
+}
+.main-iconDetail{
+  flex: 1;
+  text-align: center;
+}
+.main-funcIcon{
+  margin-top: 20rpx;
+}
+.main-iconDetail>text{
+  font-size: 25rpx;
+  color: #BFBFBF;
+  font-weight: 600;
+}
