@@ -1,0 +1,53 @@
+<!--miniprogram/pages/introduce/introduce.wxml-->
+<!-- <text>miniprogram/pages/introduce/introduce.wxml</text> -->
+
+<view class="imageSize">
+	<image class="image" src="http://www.cqucc.com.cn//images/147462709172259955.gif">
+
+	</image>
+</view>
+<van-tabs
+ bind:click="onClick"
+ color="#8ECDA9"
+ line-width="50px"
+>
+	<van-tab title="学校简介">
+		<view class="introduceOne">
+			<rich-text nodes="{{content}}"></rich-text>
+		</view>
+		<view class="foot">
+			<view class="text">
+				<text>{{address}}</text>
+				<text>{{office}}</text>
+				<text>{{mobilephone}}</text>
+				<text>{{telephone}}</text>
+			</view>
+		</view>
+	</van-tab>
+	<van-tab title="现任领导">
+
+		<view class="img">
+			<image class="masterImg" src="{{masterImg}}">
+
+			</image>
+		</view>
+		<view class="introduceTwo">
+			<view class="textBox">
+				<text class="textOne">
+				杨天怡
+			</text>
+			</view>
+
+			<text class="maincontent">{{masterIntroduce}}</text>
+		</view>
+		<view class="foot">
+			<view class="text">
+				<text>{{address}}</text>
+				<text>{{office}}</text>
+				<text>{{mobilephone}}</text>
+				<text>{{telephone}}</text>
+			</view>
+		</view>
+	</van-tab>
+</van-tabs>
+

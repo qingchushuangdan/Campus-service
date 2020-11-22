@@ -1,0 +1,63 @@
+/* miniprogram/pages/introduce/introduce.wxss */
+.imageSize{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image{
+  width: 604rpx;
+  height: 92rpx;
+  text-align: center;
+  /* width: 100%; */
+}
+van-tab{
+  font-size: 26rpx;
+  color: #3C3C3C;
+  line-height: 50rpx;
+}
+.introduceOne{
+  margin: 20rpx;
+}
+.introduce>text{
+  font-size: 30rpx;
+  line-height: 50rpx;
+}
+.foot{
+  background-color:  #8ECDA9;
+}
+.foot>.text{
+  padding: 20rpx;
+
+}
+.foot>.text>text{
+  /* text-align: center; */
+  /* background-color: #8ECDA9; */
+  color: white;
+  display: block;
+  font-size: 24rpx;
+}
+.img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 20rpx 20rpx 20rpx;
+}
+.introduceTwo{
+  margin: -20rpx 20rpx 20rpx 20rpx;
+}
+.textOne{
+  font-weight: 700;
+  /* text-align: center; */
+  font-size: 30rpx;
+}
+.textBox{
+  text-align: center;
+}
+.maincontent{
+  text-indent: 2em;
+  font-size: 30rpx;
+  line-height: 50rpx;
+}
+.masterImg{
+  width: 100%;
+}

@@ -3,13 +3,15 @@
     "pages/index/index",
     "pages/news/news",
     "pages/mine/mine",
-    "pages/message/message"
+    "pages/message/message",
+    "pages/introduce/introduce",
+    "pages/schoolNews/schoolNews"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#8ECDA9",
-    "navigationBarTitleText": "ECUT校园服务",
+    "navigationBarTitleText": "重大城科校园服务",
     "navigationBarTextStyle": "white"
   },
   "tabBar": {
