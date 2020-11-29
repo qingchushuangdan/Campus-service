@@ -1,1 +1,50 @@
 /* miniprogram/pages/schoolNews/schoolNews.wxss */
+.container{
+  margin: 10rpx;
+}
+.imageSize{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F7CE75;
+}
+.image{
+  width: 530rpx;
+  height: 134rpx;
+  text-align: center;
+  /* width: 100%; */
+}
+.newIconImg{
+  width: 40rpx;
+  height: 40rpx;
+}
+.title{
+  font: 40rpx;
+  font-weight: 700;
+}
+.newsContent{
+  width: 500rpx;
+  /* overflow: hidden;
+  white-space: nowrap;
+  /* float: left; */
+  /* text-overflow: ellipsis;  */
+  font-size: 28rpx;
+}
+.schoolNews{
+  display: flex;
+  margin: 10rpx 0;
+  border-bottom: 2rpx solid #cdcdcd;
+  color: #707070;
+}
+.newsTime{
+  font-size: 24rpx;
+  color: #8a8a8a;
+}
+.button{
+  display: flex;
+  color: red;
+
+}
+button{
+  color: red;
+}

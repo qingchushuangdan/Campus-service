@@ -2,7 +2,7 @@
 <!-- <text>miniprogram/pages/introduce/introduce.wxml</text> -->
 
 <view class="imageSize">
-	<image class="image" src="http://www.cqucc.com.cn//images/147462709172259955.gif">
+	<image class="image" src="https://www.ecut.edu.cn/_upload/tpl/06/0a/1546/template1546/images/logo.png">
 
 	</image>
 </view>
@@ -12,40 +12,45 @@
  line-width="50px"
 >
 	<van-tab title="学校简介">
-		<view class="introduceOne">
-			<rich-text nodes="{{content}}"></rich-text>
+		<view class="introduceList">
+			<text class="introduceOne"
+		 wx:for="{{content}}"
+		 wx:key="index"
+		 style="text-indent:2em">
+				{{item.content}}
+			</text>
 		</view>
 		<view class="foot">
 			<view class="text">
-				<text>{{address}}</text>
-				<text>{{office}}</text>
-				<text>{{mobilephone}}</text>
-				<text>{{telephone}}</text>
+				<rich-text class="rich-text" nodes="{{address}}">
+				</rich-text>
 			</view>
 		</view>
 	</van-tab>
 	<van-tab title="现任领导">
+		<view
+		 class="wrapper"
+		 wx:for="{{infomation}}"
+		 wx:key="index"
+		>
+			<view class="img">
+				<image class="images" src="{{item.imgurl}}" />
 
-		<view class="img">
-			<image class="masterImg" src="{{masterImg}}">
-
-			</image>
-		</view>
-		<view class="introduceTwo">
-			<view class="textBox">
-				<text class="textOne">
-				杨天怡
-			</text>
+			</view>
+			<view class="title-content">
+				<view class="title">
+					{{item.title}}
+				</view>
+				<view class="content">
+					{{item.content}}
+				</view>
 			</view>
 
-			<text class="maincontent">{{masterIntroduce}}</text>
 		</view>
 		<view class="foot">
 			<view class="text">
-				<text>{{address}}</text>
-				<text>{{office}}</text>
-				<text>{{mobilephone}}</text>
-				<text>{{telephone}}</text>
+				<rich-text class="rich-text" nodes="{{address}}">
+				</rich-text>
 			</view>
 		</view>
 	</van-tab>

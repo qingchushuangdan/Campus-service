@@ -1,17 +1,14 @@
 // miniprogram/pages/introduce/introduce.js
+const app = getApp()
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    content: '',
+    content: [],
     address: '',
-    office: '',
-    mobilephone: '',
-    telephone: '',
-    masterImg: '',
-    masterIntroduce: ''
+    infomation: []
 
   },
   onClick(event) {
@@ -34,23 +31,36 @@ Page({
       console.log(res);
       wx.hideLoading()
       const result = res.result || ''
+      console.log(result.introduceList);
       this.setData({
-        content: result.introduce,
+        content: result.introduceList,
         address: result.address,
         office: result.office,
         mobilephone: result.mobilephone,
         telephone: result.telephone,
         masterImg: result.masterImg,
-        masterIntroduce: result.masterIntroduce
+        // masterIntroduce: result.masterIntroduce
       })
       
     })
   },
+  getData(){
+    wx.cloud.database().collection('getIntroduces').get().then( res => {
+      console.log(res);
+      this.setData({
+        infomation: res.data
+      })
+    })
+  },
+  
+      
+  
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
     this.getIntroduce()
+    this.getData()
   },
 
   /**

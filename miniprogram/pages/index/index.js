@@ -13,23 +13,23 @@ Page({
     ],
     interval: 3000,
     duration: 500,
-    enterUniversity: '走进城科',
-    universityServer: '城科服务',
+    enterUniversity: '走进ECUT',
+    universityServer: 'ECUT服务',
     enterUniversityList: [
       {
         id: 1,
         imgUrl: '/images/introduce.png',
-        text: '城科简介'
+        text: 'ECUT简介'
       },
       {
         id: 2,
         imgUrl: '/images/run.png',
-        text: '逛逛城科'
+        text: '逛逛ECUT'
       },
       {
         id: 3,
         imgUrl: '/images/schoolNews.png',
-        text: '城科动态'
+        text: 'ECUT动态'
       },
       {
         id: 4,
@@ -78,22 +78,22 @@ Page({
     }
     if ($id == 2) {
       wx.navigateTo({
-      url: '../schoolNews/schoolNews'
+      // url: '../schoolNews/schoolNews'
     })
     }
     if ($id == 3) {
       wx.navigateTo({
-      url: '../news/news'
+      url: '../schoolNews/schoolNews'
     })
     }
     if ($id == 4) {
       wx.navigateTo({
-      url: '../introduce/introduce'
+      // url: '../introduce/introduce'
     })
     }
     if ($id == 5) {
       wx.navigateTo({
-      url: '../introduce/introduce'
+      // url: '../introduce/introduce'
     })
     }
     

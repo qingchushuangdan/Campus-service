@@ -1,3 +1,10 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    
+  },
+  "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F7CE75",
+    "navigationBarTitleText": "ECUT动态",
+    "navigationBarTextStyle": "white"
 }

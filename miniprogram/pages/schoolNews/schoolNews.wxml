@@ -1,2 +1,42 @@
 <!--miniprogram/pages/schoolNews/schoolNews.wxml-->
-<text>miniprogram/pages/schoolNews/schoolNews.wxml</text>
+<view class="imageSize">
+	<image class="image" src="https://www.ecut.edu.cn/_upload/tpl/06/0a/1546/template1546/images/logo.png">
+
+	</image>
+</view>
+<view class="container">
+
+	<view class="title">
+		学校新闻
+	</view>
+	<view
+	 class="schoolNews"
+	 wx:for="{{schoolNewsList}}"
+	 wx:key="index"
+	>
+		<view class="newsIcon">
+			<image class="newIconImg" src="/images/news.png">
+
+			</image>
+		</view>
+		<view class="newsContent">
+			{{item.newsText}}
+		</view>
+		<view class="newsTime">
+			{{item.newsTime}}
+		</view>
+	</view>
+	<view class="button">
+		<button type="default" size="mini">首页</button>
+		<button type="default" size="mini">上一页</button>
+		<button
+		 type="default"
+		 size="mini"
+		 bindtap="nextPage"
+		>下一页
+		</button>
+		<button type="default" size="mini">尾页</button>
+	</view>
+
+</view>
+
