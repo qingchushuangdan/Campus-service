@@ -9,7 +9,7 @@ cloud.init()
 
 // 云函数入口函数
 exports.main = async (event, context) => {
-  let serverUrl = "https://news.ecut.edu.cn/120/list.htm"
+  let serverUrl = `https://news.ecut.edu.cn${event.url}`
   const result = await superagent.get(serverUrl).charset('utf-8')
   const data = result.text || ''
   const $ = cheerio.load(data, { decodeEntities: false})

@@ -17,13 +17,19 @@
 <view class="main">
 	<view class="main-enterUniversity">
 		<view class="main-title">
-			{{enterUniversity}}
+			<view class="main-titleImg">
+				<image class="img" src="{{logo}}"></image>
+			</view>
+			<view class="main-titleContent">
+				{{enterUniversity}}
+			</view>
 		</view>
 		<view class="main-funcIcon">
 			<view
 			 class="main-iconDetail"
 			 wx:for="{{enterUniversityList}}"
 			 wx:key="index"
+			 data-url="{{item.url}}"
 			 bindtap="getFunction"
 			 data-id="{{item.id}}"
 			>
@@ -37,7 +43,12 @@
 	</view>
 	<view class="main-enterUniversity">
 		<view class="main-title">
-			{{universityServer}}
+			<view class="main-titleImg">
+				<image class="img" src="{{logo}}"></image>
+			</view>
+			<view class="main-titleContent">
+				{{universityServer}}
+			</view>
 		</view>
 		<view class="main-funcIcon">
 			<view

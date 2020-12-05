@@ -11,6 +11,7 @@ Page({
       '/images/swiper5.jpeg',
       '/images/swiper4.jpeg',
     ],
+    logo: '../../images/logo.png',
     interval: 3000,
     duration: 500,
     enterUniversity: '走进ECUT',
@@ -18,26 +19,31 @@ Page({
     enterUniversityList: [
       {
         id: 1,
+        url: '',
         imgUrl: '/images/introduce.png',
         text: 'ECUT简介'
       },
       {
         id: 2,
+        url: '',
         imgUrl: '/images/run.png',
         text: '逛逛ECUT'
       },
       {
         id: 3,
+        url: 'list.htm',
         imgUrl: '/images/schoolNews.png',
         text: 'ECUT动态'
       },
       {
         id: 4,
+        url: '',
         imgUrl: '/images/department.png',
         text: '院系介绍'
       },
       {
         id: 5,
+        url: '',
         imgUrl: '/images/cal.png',
         text: '校历'
       }
@@ -73,37 +79,52 @@ Page({
     console.log($id);
     if ($id == 1) {
       wx.navigateTo({
-      url: '../introduce/introduce'
-    })
+        url: '../introduce/introduce'
+      })
     }
     if ($id == 2) {
       wx.navigateTo({
-      // url: '../schoolNews/schoolNews'
-    })
+        // url: '../schoolNews/schoolNews'
+      })
     }
     if ($id == 3) {
       wx.navigateTo({
-      url: '../schoolNews/schoolNews'
-    })
+        url: '../schoolNews/schoolNews'
+      })
     }
     if ($id == 4) {
       wx.navigateTo({
-      // url: '../introduce/introduce'
-    })
+        // url: '../introduce/introduce'
+      })
     }
     if ($id == 5) {
       wx.navigateTo({
-      // url: '../introduce/introduce'
-    })
+        // url: '../introduce/introduce'
+      })
     }
-    
+
   },
+  // getNewsInt() {
+  //   wx.cloud.callFunction({
+  //     name: 'getNewsInt',
+  //     data: {}
+  //   }).then(res => {
+  //     const result = res.result || ''
+  //     // console.log(result); 
+  //     this.setData({
+  //       url: result.url.split('/')[4]
+  //     })
+  //     console.log(this.data.url);
+      
+  //   })
+  // },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    // console.log(options);
+    // this.getNewsInt()
   },
 
   /**

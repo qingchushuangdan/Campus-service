@@ -8,7 +8,8 @@
 .main-title{
   color: #8ECDA9;
   font-weight: 400;
-  letter-spacing: 0.3em;
+  /* letter-spacing: 0.3em; */
+  display: flex;
   /* text-align: center; */
 }
 .funcImage{
@@ -29,4 +30,11 @@
   font-size: 25rpx;
   color: #BFBFBF;
   font-weight: 600;
+}
+.main-titleImg>image{
+  width: 35rpx;
+  height: 35rpx;
+  padding-top: 5rpx;
+  padding-left: 10rpx;
+  padding-right: 10rpx;
 }

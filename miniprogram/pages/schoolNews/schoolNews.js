@@ -9,15 +9,20 @@ Page({
     firstPageUrl: '',
     prevPageUrl: '',
     nextPageUrl: '',
-    lastPageUrl: ''
+    lastPageUrl: '',
+    url: '/120/list.htm',
+    preAble: false,
+    nextAble: false,
   },
-  getSchoolNews() {
+  getSchoolNews(url) {
     wx.showLoading({
       title: '正在加载'
     })
     wx.cloud.callFunction({
       name: 'getSchoolNews',
-      data: {}
+      data: {
+        url: url
+      }
     }).then(res => {
       const result = res.result || ''
       console.log(res);
@@ -29,17 +34,33 @@ Page({
         nextPageUrl: result.nextPage,
         lastPageUrl: result.lastPage
       })
+      wx.pageScrollTo({
+        scrollTop: 0,
+        duration: 0
+      });
     })
   },
   nextPage() {
+    if (this.data.nextAble) return
     this.getSchoolNews(this.data.nextPageUrl)
+  },
+  prevPage() {
+    if (this.data.preAble) return
+    this.getSchoolNews(this.data.prevPageUrl)
+  },
+  firstPage() {
+    this.getSchoolNews(this.data.firstPageUrl)
+  },
+  lastPage() {
+    this.getSchoolNews(this.data.lastPageUrl)
   },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    console.log(options);
-    this.getSchoolNews()
+    // console.log(options);
+    this.getSchoolNews(this.data.url)
+    console.log(this.data.nextPageUrl);
   },
 
   /**
