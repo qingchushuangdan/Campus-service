@@ -32,9 +32,9 @@
   font-weight: 600;
 }
 .main-titleImg>image{
-  width: 35rpx;
-  height: 35rpx;
-  padding-top: 5rpx;
+  width: 50rpx;
+  height: 50rpx;
+  /* padding-top: 5rpx; */
   padding-left: 10rpx;
   padding-right: 10rpx;
 }

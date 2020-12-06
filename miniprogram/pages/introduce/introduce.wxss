@@ -14,21 +14,16 @@
 van-tab{
   font-size: 26rpx;
   color: #3C3C3C;
-  line-height: 50rpx;
-}
-.introduceOne{
-  /* margin: -100rpx 20rpx 0 20rpx; */
-  font-size: 33rpx;
-  /* text-indent: 2em; */
+  /* line-height: 50rpx; */
 }
 .introduceList{
-  margin: -130rpx 20rpx 0 20rpx;
-  /* text-indent: 2em; */
-
+  padding: 20rpx;
 }
-.introduce>text{
-  font-size: 30rpx;
+.introduceOne{
+  font-size: 29rpx;
+  text-indent: 2em;
   line-height: 50rpx;
+  padding-bottom: 10rpx;
 }
 rich-text{
   color: white;

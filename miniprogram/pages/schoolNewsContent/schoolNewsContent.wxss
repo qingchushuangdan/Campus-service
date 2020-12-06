@@ -1,0 +1,33 @@
+/* miniprogram/pages/schoolNewsContent/schoolNewsContent.wxss */
+.imageSize{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F7CE75;
+}
+.image{
+  width: 530rpx;
+  height: 134rpx;
+  text-align: center;
+  /* width: 100%; */
+}
+.main-wrapper{
+  padding: 10px;
+}
+.news-title{
+  text-align: center;
+  font-size: 33rpx;
+  font-weight: 700;
+}
+.news-detail{
+  text-align: center;
+  font-size: 24rpx;
+  color:#707070;
+  padding-top: 20rpx;
+}
+.news-content{
+  padding-top: 30rpx;
+  text-indent: 2em;
+  font-size: 28rpx;
+  line-height: 50rpx;
+}

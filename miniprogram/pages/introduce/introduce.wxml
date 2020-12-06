@@ -13,12 +13,13 @@
 >
 	<van-tab title="学校简介">
 		<view class="introduceList">
-			<text class="introduceOne"
-		 wx:for="{{content}}"
-		 wx:key="index"
-		 style="text-indent:2em">
-				{{item.content}}
-			</text>
+			<view
+			 class="introduceOne"
+			 wx:for="{{content}}"
+			 wx:key="index"
+			>
+				{{item.photograph}}
+			</view>
 		</view>
 		<view class="foot">
 			<view class="text">

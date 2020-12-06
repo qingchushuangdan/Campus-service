@@ -33,7 +33,7 @@ Page({
       const result = res.result || ''
       console.log(result.introduceList);
       this.setData({
-        content: result.introduceList,
+        // content: result.introduce,
         address: result.address,
         office: result.office,
         mobilephone: result.mobilephone,
@@ -42,6 +42,14 @@ Page({
         // masterIntroduce: result.masterIntroduce
       })
       
+    })
+  },
+  getSchoolIntroduce() {
+    wx.cloud.database().collection('schoolintroduce').get().then( res => {
+      console.log(res)
+      this.setData({
+        content: res.data
+      })
     })
   },
   getData(){
@@ -61,6 +69,7 @@ Page({
   onLoad: function (options) {
     console.log(options);
     this.getIntroduce()
+    this.getSchoolIntroduce()
     this.getData()
   },
 

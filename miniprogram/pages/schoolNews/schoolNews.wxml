@@ -13,6 +13,8 @@
 	 class="schoolNews"
 	 wx:for="{{schoolNewsList}}"
 	 wx:key="index"
+	 data-url="{{item.url}}"
+	 bindtap="readToNews"
 	>
 		<view class="newsIcon">
 			<image class="newIconImg" src="/images/news.png">

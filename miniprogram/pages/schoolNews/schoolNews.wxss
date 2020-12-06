@@ -43,6 +43,7 @@
 .button{
   display: flex;
   color: red;
+  padding-bottom: 30rpx;
 
 }
 button{

@@ -79,6 +79,26 @@
           "pathName": "pages/index/index",
           "query": "",
           "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/schoolNewsContent/schoolNewsContent",
+          "pathName": "pages/schoolNewsContent/schoolNewsContent",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/schoolNews/schoolNews",
+          "pathName": "pages/schoolNews/schoolNews",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/index/index",
+          "pathName": "pages/index/index",
+          "scene": null
         }
       ]
     }

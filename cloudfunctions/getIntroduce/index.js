@@ -13,13 +13,13 @@ exports.main = async (event, context) => {
   const result = await superagent.get(serverUrl).charset('utf-8')
   const data = result.text || ''
   const $ = cheerio.load(data, { decodeEntities: false})
-  let introduce = $('#wp_content_w9_0').find('p')
-  let introduceList = []
-  for (let i = 0; i < introduce.length; i++) {
-    let obj = {}
-    obj['content'] = $(introduce[i]).text().trim()
-    introduceList.push(obj)
-  }
+  let introduce = $('#wp_content_w9_0').text()
+  // let introduceList = []
+  // for (let i = 0; i < introduce.length; i++) {
+  //   let obj = {}
+  //   obj['content'] = $(introduce[i]).text().trim()
+  //   introduceList.push(obj)
+  // }
   let address = $('.footer_sydw_rr').html()
   // let address = $('.textdisplay_147462833335953323').find('.con').find('p').eq(0).text()
   // let office = $('.textdisplay_147462833335953323').find('.con').find('p').eq(1).text()
@@ -33,7 +33,7 @@ exports.main = async (event, context) => {
   // let masterImg = $2('.paging_content').find('div').html()
   let masterIntroduce = $2('.paging_content').find('div').find('p').text()
   return {
-    introduceList,
+    introduce,
     address,
     masterIntroduce
     // office,
