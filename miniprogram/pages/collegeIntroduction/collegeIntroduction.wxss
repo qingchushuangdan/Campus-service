@@ -1,0 +1,21 @@
+/* miniprogram/pages/collegeIntroduction/collegeIntroduction.wxss */
+.imageSize{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #9AC2EE;
+}
+.image{
+  width: 530rpx;
+  height: 134rpx;
+  text-align: center;
+  /* width: 100%; */
+}
+.title{
+  /* text-align: center; */
+  font-size: 30rpx;
+  padding: 25rpx;
+  border-bottom: 1rpx solid #cdcdcd;
+  color: #707070;
+  line-height: 30rpx;
+}

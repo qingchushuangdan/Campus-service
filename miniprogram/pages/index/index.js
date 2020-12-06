@@ -94,7 +94,7 @@ Page({
     }
     if ($id == 4) {
       wx.navigateTo({
-        // url: '../introduce/introduce'
+        url: '../collegeIntroduction/collegeIntroduction'
       })
     }
     if ($id == 5) {

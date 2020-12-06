@@ -1,6 +1,6 @@
 /* miniprogram/pages/schoolNews/schoolNews.wxss */
 .container{
-  margin: 10rpx;
+  padding: 10rpx;
 }
 .imageSize{
   display: flex;
