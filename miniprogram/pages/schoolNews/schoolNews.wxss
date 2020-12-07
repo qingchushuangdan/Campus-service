@@ -15,11 +15,11 @@
   /* width: 100%; */
 }
 .newIconImg{
-  width: 40rpx;
-  height: 40rpx;
+  width: 35rpx;
+  height: 35rpx;
 }
 .title{
-  font: 40rpx;
+  font-size: 32rpx;
   font-weight: 700;
 }
 .newsContent{
@@ -29,10 +29,11 @@
   /* float: left; */
   /* text-overflow: ellipsis;  */
   font-size: 28rpx;
+  line-height: 28rpx;
 }
 .schoolNews{
   display: flex;
-  margin: 10rpx 0;
+  padding: 15rpx 0;
   border-bottom: 2rpx solid #cdcdcd;
   color: #707070;
 }

@@ -13,9 +13,21 @@
 }
 .title{
   /* text-align: center; */
+  /* margin: 0 20rpx; */
   font-size: 30rpx;
   padding: 25rpx;
   border-bottom: 1rpx solid #cdcdcd;
   color: #707070;
   line-height: 30rpx;
+  display: flex;
+}
+.title-left{
+  flex: 99;
+}
+.title-right{
+  flex: 1;
+}
+.img{
+  width: 30rpx;
+  height: 30rpx;
 }

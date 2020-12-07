@@ -10,6 +10,14 @@
  wx:for="{{content}}"
  wx:key="index"
 >
-	{{item.title}}
+	<view class="title-left">
+		{{item.title}}
+	</view>
+	<view class="title-right">
+		<image class="img" src="../../images/right-arrow.png">
+
+		</image>
+	</view>
+
 </view>
 
