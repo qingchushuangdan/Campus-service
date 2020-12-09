@@ -1,0 +1,40 @@
+/* miniprogram/pages/introductionDetail/introductionDetail.wxss */
+.imageSize{
+  text-align: center;
+  background-color: #9AC2EE;
+
+  /* position: fixed; */
+  
+}
+.image{
+  width: 530rpx;
+  height: 134rpx;
+  /* text-align: center; */
+  /* width: 100%; */
+}
+.detail{
+  padding: 20rpx;
+}
+.title{
+  text-align: center;
+  /* color: #8e9194; */
+  font-size: 40rpx;
+}
+.content{
+  font-size: 28rpx;
+  /* color: #8e9194; */
+  margin-top: 10rpx;
+  line-height: 50rpx;
+  text-indent: 2em;
+}
+.img{
+  width: 566rpx;
+  height: 160rpx;
+  /* justify-content: center;
+  align-items: center; */
+}
+.image{
+  /* text-align: center; */
+  margin: 0 auto;
+  padding: 10rpx;
+}

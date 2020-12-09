@@ -6,10 +6,10 @@ Page({
    */
   data: {
     imgUrls: [
-      '/images/swiper1.jpeg',
-      '/images/swiper2.jpeg',
-      '/images/swiper5.jpeg',
-      '/images/swiper4.jpeg',
+      '/images/swiper1.jpg',
+      '/images/swiper4.jpg',
+      '/images/swiper3.jpg',
+      '/images/swiper5.jpg',
     ],
     logo: '../../images/logo.png',
     interval: 3000,
@@ -44,8 +44,8 @@ Page({
       {
         id: 5,
         url: '',
-        imgUrl: '/images/cal.png',
-        text: '校历'
+        imgUrl: '/images/count.png',
+        text: '历年分数线'
       }
     ],
     universityServerList: [

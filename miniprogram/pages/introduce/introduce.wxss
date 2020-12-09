@@ -55,8 +55,10 @@ rich-text{
   margin: 0 20rpx 20rpx 20rpx;
 } */
 .wrapper{
-  margin: 20rpx;
+  padding: 20rpx;
   /* border: 2rpx solid  #8ECDA9; */
+  margin-bottom: 20rpx;
+  border-bottom: 3px solid #8ECDA9;
 }
 .title-content .title{
   text-align: center;
@@ -66,14 +68,18 @@ rich-text{
 .title-content .content{
   font-size: 30rpx;
   text-indent: 2em;
+  line-height: 40rpx;
 }
 .images{
   width: 100%;
-  height: 1047rpx;
+  height: 700rpx;
+  border-radius: 50rpx;
+  box-shadow: 10px 10px 10px rgba(0,0,0,.5);
 }
 .img{
   /* margin: 20rpx; */
   border-radius: 5rpx;
+  /* margin: 0 auto; */
   
 }
 

@@ -1,36 +1,31 @@
-// miniprogram/pages/collegeIntroduction/collegeIntroduction.js
+// miniprogram/pages/introductionDetail/introductionDetail.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    content: [],
+    content: []
   },
-  getData() {
-    wx.cloud.database().collection('collegeIntroduction').get().then( res => {
-      // console.log(res)
-      this.setData({
-        content: res.data
-      })
-      // console.log(content);
+getData(url) {
+  wx.cloud.database().collection('collegeIntroduction').where({
+    _id: url
+  }).get().then( res => {
+    // console.log(res);
+    this.setData({
+      content: res.data
     })
-  },
-  toReadDetail(e) {
-    console.log(e);
-    let url = e.currentTarget.dataset.url
-    wx.navigateTo({
-      url: `../introductionDetail/introductionDetail?url=${url}`
-    })
-  },
+
+  })
+},
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    // console.log(options);
-    this.getData()
-    this.toReadDetail()
-    // console.log(this.departmentInfomation);
+    console.log(options);
+    const {url} = options
+    this.getData(url)
+    // console.log(this.content);
   },
 
   /**

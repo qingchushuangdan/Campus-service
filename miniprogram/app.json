@@ -7,7 +7,8 @@
     "pages/introduce/introduce",
     "pages/schoolNews/schoolNews",
     "pages/schoolNewsContent/schoolNewsContent",
-    "pages/collegeIntroduction/collegeIntroduction"
+    "pages/collegeIntroduction/collegeIntroduction",
+    "pages/introductionDetail/introductionDetail"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",

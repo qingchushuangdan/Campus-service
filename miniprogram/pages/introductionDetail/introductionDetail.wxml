@@ -1,0 +1,17 @@
+<!--miniprogram/pages/introductionDetail/introductionDetail.wxml-->
+<!-- <text>miniprogram/pages/introductionDetail/introductionDetail.wxml</text> -->
+<!-- <view class="title">{{title}}</view> -->
+<view class="imageSize">
+	<image class="image" src="https://www.ecut.edu.cn/_upload/tpl/06/0a/1546/template1546/images/logo.png">
+
+	</image>
+</view>
+<view
+ class="detail"
+ wx:for="{{content}}"
+ wx:key="index"
+>
+	<view class="title">{{item.title}}</view>
+	<view class="content">{{item.introduce}}</view>
+</view>
+

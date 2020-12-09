@@ -9,9 +9,12 @@
  class="title"
  wx:for="{{content}}"
  wx:key="index"
+ data-url="{{item._id}}"
+ bindtap="toReadDetail"
 >
 	<view class="title-left">
 		{{item.title}}
+		<!-- {{item._id}} -->
 	</view>
 	<view class="title-right">
 		<image class="img" src="../../images/right-arrow.png">
