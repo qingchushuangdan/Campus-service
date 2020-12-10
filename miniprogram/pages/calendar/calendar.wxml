@@ -1,0 +1,25 @@
+<!--miniprogram/pages/calendar/calendar.wxml-->
+<!-- <text>miniprogram/pages/calendar/calendar.wxml</text> -->
+<van-calendar
+ title="2020-2021学年校历"
+ default-date
+ show="{{ show }}"
+ color="#DA8FB0"
+ min-date="{{ minDate }}"
+ max-date="{{ maxDate }}"
+ poppable="{{ false }}"
+ show-confirm="{{ false }}"
+ class="calendar"
+ formatter="{{ formatter }}"
+/>
+<view class="note noteOne">
+	备注(第一学期):学生9月5-6日报到注册，9月7日正式上课，新生报到时间视疫情防控情况而定;
+	2021年1月23日放寒假，寒假时间:1月23日至2月26日止(共五周);
+	节假日放假调休以国务院公布时间为准;
+</view>
+<view class="note noteTwo">
+	备注(第二学期):学生2月27-28日报到注册，3月1日正式上课;
+	2021年7月3日放暑假，寒假时间:7月3日至9月3日止(共九周);
+	节假日放假调休以国务院公布时间为准;
+</view>
+

@@ -44,28 +44,33 @@ Page({
       {
         id: 5,
         url: '',
-        imgUrl: '/images/count.png',
-        text: '历年分数线'
+        imgUrl: '/images/cal.png',
+        text: '校历'
       }
     ],
     universityServerList: [
       {
+        id: 1,
         imgUrl: '/images/exchange.png',
         text: '闲置交易'
       },
       {
+        id: 2,
         imgUrl: '/images/lost-found.png',
         text: '失物招领'
       },
       {
+        id: 3,
         imgUrl: '/images/deliever.png',
         text: '代拿快递'
       },
       {
+        id: 4,
         imgUrl: '/images/carpooling.png',
         text: '拼车出行'
       },
       {
+        id: 5,
         imgUrl: '/images/bodytest.png',
         text: '体质检测'
       }
@@ -99,7 +104,7 @@ Page({
     }
     if ($id == 5) {
       wx.navigateTo({
-        // url: '../introduce/introduce'
+        url: '../calendar/calendar'
       })
     }
 

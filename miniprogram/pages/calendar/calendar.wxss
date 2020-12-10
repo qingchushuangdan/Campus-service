@@ -1,0 +1,11 @@
+/* miniprogram/pages/calendar/calendar.wxss */
+.calendar {
+  --calendar-height: 450px;
+}
+.note {
+  font-size: 24rpx;
+  margin-top: 15rpx;
+  color: rgb(124, 109, 109);
+  line-height: 40rpx;
+  padding: 0 20rpx;
+}
