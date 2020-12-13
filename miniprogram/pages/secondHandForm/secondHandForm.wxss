@@ -1,0 +1,10 @@
+/* miniprogram/pages/secondHandForm/secondHandForm.wxss */
+.main-title{
+  text-align: center;
+  font-size: 35rpx;
+  font-family: microsoft-yahei;
+  padding: 20rpx 0;
+}
+van-field{
+  padding-top: 10rpx;
+}

@@ -1,0 +1,8 @@
+/* miniprogram/pages/secondHand/secondHand.wxss */
+.addIcon{
+  width: 100rpx;
+  height: 100rpx;
+  position: absolute;
+  right: 20rpx;
+  bottom: 100rpx;
+}

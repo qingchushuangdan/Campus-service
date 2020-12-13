@@ -1,0 +1,38 @@
+<!--miniprogram/pages/secondHandForm/secondHandForm.wxml-->
+<!-- <text>miniprogram/pages/secondHandForm/secondHandForm.wxml</text> -->
+<view class="main-container">
+	<view class="main-title">发布宝贝</view>
+	<van-cell-group>
+		<van-field
+		 value="{{ message }}"
+		 label="详情"
+		 type="textarea"
+		 placeholder="描述一下你要卖的宝贝吧~"
+		 autosize
+		 border="{{ true }}"
+		/>
+		<van-field
+		 value="{{ address }}"
+		 label="地址"
+		 placeholder="请输入交易地址"
+		/>
+		<van-field
+		 value="{{ communiacation }}"
+		 label="联系方式"
+		 placeholder="请输入联系方式"
+		/>
+		<van-field
+		 value="{{ price }}"
+		 label="价格"
+		 icon="question-o"
+		 placeholder="请输入商品价格"
+		 type="number"
+		 bind:click-icon="onClickIcon"
+		/>
+	</van-cell-group>
+
+	<van-uploader file-list="{{ fileList }}" />
+
+</view>
+<van-button type="default">提交</van-button>
+

@@ -1,0 +1,4 @@
+<view class="add" bindtap="setForm">
+	<image class="addIcon" src="../../images/add.png"></image>
+</view>
+

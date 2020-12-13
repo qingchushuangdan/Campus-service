@@ -55,6 +55,8 @@
 			 class="main-iconDetail"
 			 wx:for="{{universityServerList}}"
 			 wx:key="index"
+			 bindtap="getEcutServe"
+			 data-id="{{item.id}}"
 			>
 				<view class="image">
 					<image class="funcImage" src="{{item.imgUrl}}"></image>

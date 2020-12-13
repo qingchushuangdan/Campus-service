@@ -109,6 +109,35 @@ Page({
     }
 
   },
+  getEcutServe(e) {
+    var $id = e.currentTarget.dataset.id
+    console.log($id);
+    if ($id == 1) {
+      wx.navigateTo({
+        url: '../secondHand/secondHand'
+      })
+    }
+    if ($id == 2) {
+      wx.navigateTo({
+        // url: '../schoolNews/schoolNews'
+      })
+    }
+    if ($id == 3) {
+      wx.navigateTo({
+        // url: '../schoolNews/schoolNews'
+      })
+    }
+    if ($id == 4) {
+      wx.navigateTo({
+        // url: '../collegeIntroduction/collegeIntroduction'
+      })
+    }
+    if ($id == 5) {
+      wx.navigateTo({
+        // url: '../calendar/calendar'
+      })
+    }
+  },
   // getNewsInt() {
   //   wx.cloud.callFunction({
   //     name: 'getNewsInt',
@@ -120,7 +149,7 @@ Page({
   //       url: result.url.split('/')[4]
   //     })
   //     console.log(this.data.url);
-      
+
   //   })
   // },
 
