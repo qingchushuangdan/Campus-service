@@ -3,5 +3,10 @@
     "van-field": "@vant/weapp/field/index",
     "van-uploader": "@vant/weapp/uploader/index",
     "van-button": "@vant/weapp/button/index"
-  }
+  },
+  "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F7CE75",
+    "navigationBarTitleText": "闲置交易",
+    "navigationBarTextStyle": "white"
 }

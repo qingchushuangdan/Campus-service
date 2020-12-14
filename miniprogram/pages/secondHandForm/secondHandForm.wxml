@@ -2,37 +2,106 @@
 <!-- <text>miniprogram/pages/secondHandForm/secondHandForm.wxml</text> -->
 <view class="main-container">
 	<view class="main-title">发布宝贝</view>
-	<van-cell-group>
-		<van-field
-		 value="{{ message }}"
-		 label="详情"
-		 type="textarea"
-		 placeholder="描述一下你要卖的宝贝吧~"
-		 autosize
-		 border="{{ true }}"
-		/>
-		<van-field
-		 value="{{ address }}"
-		 label="地址"
-		 placeholder="请输入交易地址"
-		/>
-		<van-field
-		 value="{{ communiacation }}"
-		 label="联系方式"
-		 placeholder="请输入联系方式"
-		/>
-		<van-field
-		 value="{{ price }}"
-		 label="价格"
-		 icon="question-o"
-		 placeholder="请输入商品价格"
-		 type="number"
-		 bind:click-icon="onClickIcon"
-		/>
-	</van-cell-group>
+	<view class="page-section">
+		<view class="title">
+			<image class="icon" src="../../images/product.png"></image>
+			<view class="page-section-title">宝贝描述</view>
+		</view>
+		<view class="weui-cells weui-cells_after-title">
+			<view class="weui-cell weui-cell_input">
+				<view class="weui-cell__bd">
+					<input
+					 class="weui-input"
+					 name="input"
+					 placeholder="描述一下您要卖的宝贝吧~"
+					/>
+				</view>
+			</view>
+		</view>
+	</view>
 
-	<van-uploader file-list="{{ fileList }}" />
+	<view class="page-section">
+		<view class="title">
+			<image class="icon" src="../../images/price.png"></image>
+			<view class="page-section-title">价格</view>
+		</view>
+		<view class="weui-cells weui-cells_after-title">
+			<view class="weui-cell weui-cell_input">
+				<view class="weui-cell__bd">
+					<input
+					 class="weui-input"
+					 name="input"
+					 placeholder="请填写您想卖的价格噢~"
+					/>
+				</view>
+			</view>
+		</view>
+	</view>
 
+	<view class="page-section">
+		<view class="title">
+			<image class="icon" src="../../images/address.png"></image>
+			<view class="page-section-title">交易地址</view>
+		</view>
+		<view class="weui-cells weui-cells_after-title">
+			<view class="weui-cell weui-cell_input">
+				<view class="weui-cell__bd">
+					<input
+					 class="weui-input"
+					 name="input"
+					 placeholder="请填写交易地址噢~"
+					/>
+				</view>
+			</view>
+		</view>
+	</view>
+
+	<view class="page-section">
+		<view class="title">
+			<image class="icon" src="../../images/tel.png"></image>
+			<view class="page-section-title">联系方式</view>
+		</view>
+		<view class="weui-cells weui-cells_after-title">
+			<view class="weui-cell weui-cell_input">
+				<view class="weui-cell__bd">
+					<input
+					 class="weui-input"
+					 name="input"
+					 placeholder="请输入您的联系方式~"
+					/>
+				</view>
+			</view>
+		</view>
+	</view>
+
+	<view class="page-section page-section-gap">
+		<view class="title">
+			<image class="icon" src="../../images/send.png"></image>
+			<view class="page-section-title">交易方式</view>
+		</view>
+		<radio-group name="radio">
+			<label>
+				<radio value="radio1" />
+				卖家自提
+			</label>
+			<label>
+				<radio value="radio2" />
+				买家上门
+			</label>
+		</radio-group>
+	</view>
+	<view class="title">
+		<image class="icon" src="../../images/photo.png"></image>
+		<view class="page-section-title">上传图片</view>
+	</view>
+	<van-uploader file-list="{{ fileList }}" bind:after-read="afterRead" />
+	<view class="button">
+		<van-button
+		 type="default"
+		 size="large"
+		 color="#F7CE75"
+		>提交信息
+		</van-button>
+	</view>
 </view>
-<van-button type="default">提交</van-button>
 

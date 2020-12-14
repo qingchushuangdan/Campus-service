@@ -1,10 +1,47 @@
 /* miniprogram/pages/secondHandForm/secondHandForm.wxss */
 .main-title{
   text-align: center;
-  font-size: 35rpx;
+  font-size: 40rpx;
   font-family: microsoft-yahei;
   padding: 20rpx 0;
+  color:  #F7CE75;
+  font-weight: 700;
 }
-van-field{
+.title{
+  display: flex;
+  padding: 20rpx 20rpx 0rpx 20rpx;
+}
+.icon{
+  width: 40rpx;
+  height: 40rpx;
+}
+.page-section-title{
+  font-size: 30rpx;
+  padding-left: 20rpx;
+  color: #F7CE75;
+}
+.weui-input{
+  padding-left: 10rpx;
+  height: 70rpx;
+  border: 1rpx solid #F7CE75;
+  border-radius: 10rpx;
+}
+/* .weui-cells_after-title{
   padding-top: 10rpx;
+} */
+.weui-cell__bd{
+  padding: 20rpx 20rpx 0rpx 20rpx;
+}
+.page-section{
+  padding-top: 10rpx;
+}
+radio-group{
+  padding: 20rpx;
+}
+label{
+  color: #797774;
+  padding-right: 30rpx;
+}
+button{
+  margin: 0 auto;
 }

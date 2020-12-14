@@ -5,22 +5,41 @@ Page({
    * 页面的初始数据
    */
   data: {
-    fileList: [
-      {
-        url: 'https://img.yzcdn.cn/vant/leaf.jpg',
-        name: '图片1',
-      },
-      // Uploader 根据文件后缀来判断是否为图片文件
-      // 如果图片 URL 中不包含类型信息，可以添加 isImage 标记来声明
-      {
-        url: 'http://iph.href.lu/60x60?text=default',
-        name: '图片2',
-        isImage: true,
-        deletable: false,
-      },
-    ],
+   
   },
+  upload() {
+    let that = this
+    console.log('点击了上传');
 
+    wx.chooseImage({
+      count: 3,
+      sizeType: ['original', 'compressed'],
+      sourceType: ['album', 'camera'],
+      success (res) {
+        // tempFilePath可以作为img标签的src属性显示图片
+        // const tempFilePaths = res.tempFilePaths
+        console.log(res);
+        that.uploadImg(res.tempFilePaths[0]);
+      }
+    })
+  },
+    uploadImg(fileUrl) {
+      wx.cloud.uploadFile({
+      cloudPath: 'qq.png',
+      filePath: fileUrl, // 文件路径
+      success: res => {
+        // get resource ID
+        console.log("上床成功", res)
+      },
+      fail: err => {
+        // handle error
+      }
+    })
+  
+
+    
+
+  },
   /**
    * 生命周期函数--监听页面加载
    */
