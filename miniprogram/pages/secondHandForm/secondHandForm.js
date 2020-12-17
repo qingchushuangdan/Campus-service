@@ -5,7 +5,31 @@ Page({
    * 页面的初始数据
    */
   data: {
-   
+   photoUrl: ''
+  },
+  handleSubmit(res) {
+    console.log(res);
+    wx.cloud.callFunction({
+      name: 'insertSecondHandInfo',
+      data: {
+        describe: res.detail.value.describe,
+        price: res.detail.value.price,
+        address: res.detail.value.address,
+        telephone: res.detail.value.telephone,
+        radio: res.detail.value.radio
+      }
+    }).then (res => {
+      console.log(res);
+    })
+  },
+  afterRead(event) {
+    // console.log(event);
+    const { file } = event.detail
+    this.setData({
+      photoUrl: file.url
+    })
+    // console.log(file.url);
+    
   },
   upload() {
     let that = this
@@ -29,7 +53,7 @@ Page({
       filePath: fileUrl, // 文件路径
       success: res => {
         // get resource ID
-        console.log("上床成功", res)
+        console.log("上传成功", res)
       },
       fail: err => {
         // handle error

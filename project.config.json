@@ -2,7 +2,7 @@
   "miniprogramRoot": "miniprogram/",
   "cloudfunctionRoot": "cloudfunctions/",
   "setting": {
-    "urlCheck": false,
+    "urlCheck": true,
     "es6": true,
     "enhance": true,
     "postcss": true,
@@ -119,6 +119,34 @@
           "id": -1,
           "name": "pages/secondHandForm/secondHandForm",
           "pathName": "pages/secondHandForm/secondHandForm",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/secondHandForm/secondHandForm",
+          "pathName": "pages/secondHandForm/secondHandForm",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/index/index",
+          "pathName": "pages/index/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/secondHandForm/secondHandForm",
+          "pathName": "pages/secondHandForm/secondHandForm",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/secondHand/secondHand",
+          "pathName": "pages/secondHand/secondHand",
           "scene": null
         }
       ]

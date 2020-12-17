@@ -1,3 +1,39 @@
+<view
+ class="main-wrapper"
+ wx:for="{{content}}"
+ wx:key="index"
+>
+	<view class="title">
+		<view class="title-left">
+			<view class="avatar">
+				<image class="avatarImg" src="{{item.avatar}}">
+				</image>
+			</view>
+		</view>
+		<view class="title-right">
+			<view class="nickname">{{item.nickname}}</view>
+			<view class="publish-time">2020-12-17 20:50</view>
+		</view>
+
+	</view>
+	<view class="content">
+		<view class="describe">
+			宝贝描述:{{item.describe}}
+		</view>
+		<view class="price">
+			价格:{{item.price}}元
+		</view>
+		<view class="address">
+			交易地址:{{item.address}}
+		</view>
+		<view class="telephone">
+			电话号码:{{item.telephone}}
+		</view>
+		<view class="send">
+			交易方式:{{item.radio}}
+		</view>
+	</view>
+</view>
 <view class="add" bindtap="setForm">
 	<image class="addIcon" src="../../images/add.png"></image>
 </view>
