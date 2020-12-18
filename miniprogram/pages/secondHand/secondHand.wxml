@@ -14,6 +14,11 @@
 			<view class="nickname">{{item.nickname}}</view>
 			<view class="publish-time">2020-12-17 20:50</view>
 		</view>
+		<view class="delete">
+			<image class="deleteInfo" src="../../images/delete.png">
+
+			</image>
+		</view>
 
 	</view>
 	<view class="content">

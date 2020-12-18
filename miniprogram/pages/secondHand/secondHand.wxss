@@ -23,7 +23,7 @@
   margin: 10rpx;
   border: 1rpx solid #F7CE75;
   border-radius: 20rpx;
-  box-shadow: 10px 10px 10px rgba(0,0,0,.5);
+  /* box-shadow: 10px 10px 10px rgba(0,0,0,.5); */
 }
 .title-right{
   padding-left: 30rpx;
@@ -66,4 +66,11 @@
   font-size: 26rpx;
   padding-bottom: 5rpx;
   color:#8a8a8a;
+}
+.deleteInfo{
+  width: 30rpx;
+  height: 30rpx;
+  position: absolute;
+  right: 25rpx;
+  top: 25rpx;
 }
