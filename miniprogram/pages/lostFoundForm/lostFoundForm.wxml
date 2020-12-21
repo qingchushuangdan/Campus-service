@@ -1,0 +1,115 @@
+<!--miniprogram/pages/lostFoundForm/lostFoundForm.wxml-->
+<!--miniprogram/pages/secondHandForm/secondHandForm.wxml-->
+<!-- <text>miniprogram/pages/secondHandForm/secondHandForm.wxml</text> -->
+<form bindsubmit="handleSubmit">
+	<view class="main-container">
+		<view class="main-title">寻物/失物</view>
+
+		<view class="page-section page-section-gap">
+			<view class="title">
+				<image class="icon" src="../../images/lostFound.png"></image>
+				<view class="page-section-title">寻物/失物</view>
+			</view>
+			<radio-group name="radio">
+				<label>
+					<radio value="寻物" />
+					寻物
+				</label>
+				<label>
+					<radio value="失物" />
+					失物
+				</label>
+			</radio-group>
+		</view>
+
+		<view class="page-section">
+			<view class="title">
+				<image class="icon" src="../../images/detail.png"></image>
+				<view class="page-section-title">寻物/失物描述</view>
+			</view>
+			<view class="weui-cells weui-cells_after-title">
+				<view class="weui-cell weui-cell_input">
+					<view class="weui-cell__bd">
+						<input
+						 class="weui-input"
+						 name="describe"
+						 placeholder="描述一下寻物或失物的细节吧~"
+						/>
+					</view>
+				</view>
+			</view>
+		</view>
+
+		<view class="page-section">
+			<view class="title">
+				<image class="icon" src="../../images/address2.png"></image>
+				<view class="page-section-title">寻物/失物地点</view>
+			</view>
+			<view class="weui-cells weui-cells_after-title">
+				<view class="weui-cell weui-cell_input">
+					<view class="weui-cell__bd">
+						<input
+						 class="weui-input"
+						 name="address"
+						 placeholder="您是在哪里找到或者丢失的呢~"
+						/>
+					</view>
+				</view>
+			</view>
+		</view>
+
+		<view class="page-section">
+			<view class="title">
+				<image class="icon" src="../../images/tel2.png"></image>
+				<view class="page-section-title">联系方式</view>
+			</view>
+			<view class="weui-cells weui-cells_after-title">
+				<view class="weui-cell weui-cell_input">
+					<view class="weui-cell__bd">
+						<input
+						 class="weui-input"
+						 name="telephone"
+						 placeholder="请输入您的联系方式~"
+						/>
+					</view>
+				</view>
+			</view>
+		</view>
+
+		<!-- <view class="title">
+			<image class="icon" src="../../images/photo.png"></image>
+			<view class="page-section-title">上传图片</view>
+		</view> -->
+		<van-uploader
+		 file-list="{{ fileList }}"
+		 deletable="{{ true }}"
+		 max-count="3"
+		 bind:after-read="afterRead"
+		 name="photo"
+		/>
+		<view class="button">
+			<!-- <van-button
+			 type="default"
+			 size="large"
+			 color="#F7CE75"
+			 form-type="submit"
+			>提交信息
+			</van-button> -->
+			<button form-type="submit">提交信息</button>
+		</view>
+	</view>
+</form>
+
+<view class="display">
+	<image
+	 class=""
+	 src="{{photoUrl}}"
+	 mode="aspectFit|aspectFill|widthFix"
+	 lazy-load="false"
+	 binderror=""
+	 bindload=""
+	>
+
+	</image>
+</view>
+

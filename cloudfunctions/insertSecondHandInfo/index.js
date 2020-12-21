@@ -24,7 +24,9 @@ exports.main = async (event, context) => {
       address: event.address,
       price: event.price,
       telephone: event.telephone,
-      radio: event.radio
+      radio: event.radio,
+      nowTime: event.nowTime,
+      timestamp: event.timestamp
     }
   })
 }

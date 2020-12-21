@@ -5,10 +5,16 @@ Page({
    * 页面的初始数据
    */
   data: {
-   photoUrl: ''
+   photoUrl: '',
   },
   handleSubmit(res) {
     console.log(res);
+      var myDate = new Date();
+      var nowTime = myDate.toLocaleString(); 
+      var timestamp=myDate.getTime();
+      console.log(nowTime); 
+      console.log(timestamp);
+      
     wx.cloud.callFunction({
       name: 'insertSecondHandInfo',
       data: {
@@ -16,9 +22,18 @@ Page({
         price: res.detail.value.price,
         address: res.detail.value.address,
         telephone: res.detail.value.telephone,
-        radio: res.detail.value.radio
+        radio: res.detail.value.radio,
+        nowTime: nowTime,
+        timestamp: timestamp
       }
     }).then (res => {
+      wx.showToast({
+        title: '提交成功',  
+        duration: 3000,
+      });
+      wx.navigateTo({
+        url: '../secondHand/secondHand'
+      })
       console.log(res);
     })
   },
@@ -59,16 +74,18 @@ Page({
         // handle error
       }
     })
+    
   
 
     
 
   },
+  
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    
   },
 
   /**

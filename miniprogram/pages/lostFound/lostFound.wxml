@@ -1,0 +1,7 @@
+<!--miniprogram/pages/lostFound/lostFound.wxml-->
+<!-- <text>miniprogram/pages/lostFound/lostFound.wxml</text> -->
+
+<view class="add" bindtap="setForm">
+	<image class="addIcon" src="../../images/add2.png"></image>
+</view>
+

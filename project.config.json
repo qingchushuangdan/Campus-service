@@ -147,6 +147,13 @@
           "id": -1,
           "name": "pages/secondHand/secondHand",
           "pathName": "pages/secondHand/secondHand",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/index/index",
+          "pathName": "pages/index/index",
           "scene": null
         }
       ]

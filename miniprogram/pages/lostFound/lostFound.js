@@ -1,37 +1,23 @@
-// miniprogram/pages/secondHand/secondHand.js
+// miniprogram/pages/lostFound/lostFound.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    content: [],
-    deleteImg: '../../images/delete.png'
-  },
-  getData() {
-    wx.cloud.database().collection('groupList').get().then( res => {
-      console.log(res);
 
-      this.setData({
-        content: res.data.reverse()
-      })
-  
-    })
   },
   setForm() {
     wx.navigateTo({
-      url: '../secondHandForm/secondHandForm'
+      url: '../lostFoundForm/lostFoundForm'
     })
   },
-  // deleteInfo() {
-  //   wx.cloud.database.collection('groupList')
-  // },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    this.getData()
+
   },
 
   /**

@@ -57,7 +57,7 @@ Page({
       {
         id: 2,
         imgUrl: '/images/lost-found.png',
-        text: '失物招领'
+        text: '寻物/失物'
       },
       {
         id: 3,
@@ -119,7 +119,7 @@ Page({
     }
     if ($id == 2) {
       wx.navigateTo({
-        // url: '../schoolNews/schoolNews'
+        url: '../lostFound/lostFound'
       })
     }
     if ($id == 3) {

@@ -1,0 +1,8 @@
+/* miniprogram/pages/lostFound/lostFound.wxss */
+.addIcon{
+  width: 100rpx;
+  height: 100rpx;
+  position: fixed;
+  right: 20rpx;
+  bottom: 100rpx;
+}
