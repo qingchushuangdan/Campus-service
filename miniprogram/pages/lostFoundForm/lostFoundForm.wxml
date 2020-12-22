@@ -3,21 +3,21 @@
 <!-- <text>miniprogram/pages/secondHandForm/secondHandForm.wxml</text> -->
 <form bindsubmit="handleSubmit">
 	<view class="main-container">
-		<view class="main-title">寻物/失物</view>
+		<view class="main-title">寻物启事/失物招领</view>
 
 		<view class="page-section page-section-gap">
 			<view class="title">
 				<image class="icon" src="../../images/lostFound.png"></image>
-				<view class="page-section-title">寻物/失物</view>
+				<view class="page-section-title">寻物启事/失物招领</view>
 			</view>
 			<radio-group name="radio">
 				<label>
-					<radio value="寻物" />
-					寻物
+					<radio value="寻物启事" />
+					寻物启事
 				</label>
 				<label>
-					<radio value="失物" />
-					失物
+					<radio value="失物招领" />
+					失物招领
 				</label>
 			</radio-group>
 		</view>

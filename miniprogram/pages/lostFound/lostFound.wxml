@@ -1,6 +1,43 @@
 <!--miniprogram/pages/lostFound/lostFound.wxml-->
 <!-- <text>miniprogram/pages/lostFound/lostFound.wxml</text> -->
+<view
+ class="main-wrapper"
+ wx:for="{{content}}"
+ wx:key="index"
+>
+	<view class="title">
+		<view class="title-left">
+			<view class="avatar">
+				<image class="avatarImg" src="{{item.avatar}}">
+				</image>
+			</view>
+		</view>
+		<view class="title-right">
+			<view class="nickname">{{item.nickname}}</view>
+			<view class="publish-time">{{item.nowTime}}</view>
+		</view>
+		<view class="delete" bindtap="deleteInfo">
+			<image class="deleteInfo" src="{{deleteImg}}">
 
+			</image>
+		</view>
+
+	</view>
+	<view class="content">
+		<view class="describe">
+			【细节描述】:{{item.describe}}
+		</view>
+		<view class="address">
+			【地址】:{{item.address}}
+		</view>
+		<view class="telephone">
+			【联系方式】:{{item.telephone}}
+		</view>
+		<view class="send">
+			【种类】:{{item.radio}}
+		</view>
+	</view>
+</view>
 <view class="add" bindtap="setForm">
 	<image class="addIcon" src="../../images/add2.png"></image>
 </view>

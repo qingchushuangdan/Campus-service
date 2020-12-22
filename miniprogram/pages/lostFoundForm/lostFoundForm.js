@@ -8,6 +8,32 @@ Page({
 
   },
 
+  handleSubmit(res) {
+    console.log(res);
+    var myDate = new Date();
+    var nowTime = myDate.toLocaleString();
+    console.log(nowTime);
+
+    wx.cloud.callFunction({
+      name: 'insertLostFoundInfo',
+      data: {
+        describe: res.detail.value.describe,
+        address: res.detail.value.address,
+        telephone: res.detail.value.telephone,
+        radio: res.detail.value.radio,
+        nowTime: nowTime,
+      }
+    }).then(res => {
+      wx.showToast({
+        title: '提交成功',
+        duration: 3000,
+      });
+      wx.navigateTo({
+        url: '../lostFound/lostFound'
+      })
+      console.log(res);
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
