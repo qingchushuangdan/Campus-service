@@ -89,7 +89,7 @@ Page({
     }
     if ($id == 2) {
       wx.navigateTo({
-        // url: '../schoolNews/schoolNews'
+        url: '../mainIndex/index'
       })
     }
     if ($id == 3) {

@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+  },
+  "backgroundColor": "#C8BEEF",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#C8BEEF",
+    "navigationBarTitleText": "逛逛ECUT",
+    "navigationBarTextStyle": "white"
+}
